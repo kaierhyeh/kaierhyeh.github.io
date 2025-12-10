@@ -17,14 +17,18 @@
 
 <body class="is-preload">
 
+	<!-- Language Switcher (Fixed Top Right) -->
+	<div class="language-switcher-fixed">
+		<button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+		<span class="lang-divider">|</span>
+		<button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+	</div>
+
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Profile Picture" /></a>
-			<h1>I'm <strong>Alex</strong>,<br />
-				a Software Engineer from <a href="https://en.wikipedia.org/wiki/42_(school)">École 42</a>,<br />
-				passionate about building robust<br />
-				systems from the ground up.</h1>
+			<a href="#" class="image avatar"><img src="images/photo de 42.jpg" alt="Profile Picture" /></a>
+			<h1 data-lang-en="I'm <strong>Alex</strong>, a Software Engineer from <a href='https://en.wikipedia.org/wiki/42_(school)'>École 42</a>, passionate about building robust systems from the ground up." data-lang-fr="Je suis <strong>Alex</strong>, Ingénieur Logiciel à <a href='https://fr.wikipedia.org/wiki/42_(école)'>École 42</a>, passionné par la création de systèmes robustes de A à Z.">I'm <strong>Alex</strong>, a Software Engineer from <a href="https://en.wikipedia.org/wiki/42_(school)">École 42</a>, passionate about building robust systems from the ground up.</h1>
 		</div>
 	</header>
 
@@ -34,107 +38,114 @@
 		<!-- One -->
 		<section id="one">
 			<header class="major">
-				<h2>Engineering Order from Chaos.</h2>
+				<h2 data-lang-en="Engineering Order from Chaos." data-lang-fr="Créer l'Ordre à partir du Chaos.">Engineering Order from Chaos.</h2>
 			</header>
-			<p>Hello! I'm <strong>Kai-Erh (Alex) YEH</strong>, a software engineer who bridges the gap between
+			<p data-lang-en="Hello! I'm <strong>Kai-Erh (Alex) YEH</strong>, a software engineer who bridges the gap between <strong>scientific rigor</strong> and <strong>digital innovation</strong>. With a background in <strong>Environmental Engineering</strong> and <strong>Astrophysics</strong>, I have always been driven to understand exactly how complex systems function &quot;under the hood.&quot;" data-lang-fr="Bonjour ! Je suis <strong>Kai-Erh (Alex) YEH</strong>, un ingénieur logiciel qui fait le pont entre <strong>rigueur scientifique</strong> et <strong>innovation numérique</strong>. Avec une formation en <strong>Ingénierie Environnementale</strong> et en <strong>Astrophysique</strong>, j'ai toujours été animé par la volonté de comprendre exactement comment fonctionnent les systèmes complexes &quot;sous le capot&quot;.">Hello! I'm <strong>Kai-Erh (Alex) YEH</strong>, a software engineer who bridges the gap between
 				<strong>scientific rigor</strong> and <strong>digital innovation</strong>. With a background in
 				<strong>Environmental Engineering</strong> and <strong>Astrophysics</strong>, I have always been driven
 				to understand exactly how complex systems function "under the hood."
 			</p>
-			<p>At <strong>École 42</strong>, I translated this analytical mindset into code. I thrive in environments
+			<p data-lang-en="At <strong>École 42</strong>, I translated this analytical mindset into code. I thrive in environments where I can <strong>turn ambiguity into structure</strong>, optimizing systems for both performance and maintainability. My portfolio ranges from building <strong>Unix shells</strong> to <strong>3D graphics engines</strong>, each project a testament to my love for clean, efficient architecture." data-lang-fr="À <strong>École 42</strong>, j'ai traduit cet état d'esprit analytique en code. Je m'épanouis dans des environnements où je peux <strong>transformer l'ambiguïté en structure</strong>, en optimisant les systèmes pour la performance et la maintenabilité. Mon portfolio va de la création de <strong>shells Unix</strong> aux <strong>moteurs graphiques 3D</strong>, chaque projet témoignant de mon amour pour une architecture claire et efficace.">At <strong>École 42</strong>, I translated this analytical mindset into code. I thrive in environments
 				where I can <strong>turn ambiguity into structure</strong>, optimizing systems for both performance and
 				maintainability. My portfolio ranges from building <strong>Unix shells</strong> to <strong>3D graphics
 					engines</strong>, each project a testament to my love for clean, efficient architecture.</p>
-			<p>What sets me apart is a fusion of disciplines: the <strong>logical precision</strong> from mathematics,
+			<p data-lang-en="What sets me apart is a fusion of disciplines: the <strong>logical precision</strong> from mathematics, the <strong>meticulous attention to detail</strong> from studying German, and a relentless drive to engineer robust solutions. Currently, I am expanding my boundaries in <strong>AI</strong> and <strong>Cybersecurity</strong>, eager to contribute to the technologies that will define our future." data-lang-fr="Ce qui me distingue, c'est une fusion de disciplines : la <strong>précision logique</strong> des mathématiques, l'<strong>attention méticuleuse aux détails</strong> de l'étude de l'allemand, et une volonté inébranlable de créer des solutions robustes. Actuellement, j'élargis mes horizons dans l'<strong>IA</strong> et la <strong>Cybersécurité</strong>, impatient de contribuer aux technologies qui définiront notre avenir.">What sets me apart is a fusion of disciplines: the <strong>logical precision</strong> from mathematics,
 				the <strong>meticulous attention to detail</strong> from studying German, and a relentless drive to
 				engineer robust solutions. Currently, I am expanding my boundaries in <strong>AI</strong> and
 				<strong>Cybersecurity</strong>, eager to contribute to the technologies that will define our future.
 			</p>
 			<ul class="actions">
-				<li><a href="#projects" class="button">View My Projects</a></li>
+				<li><a href="#projects" class="button" data-lang-en="View My Projects" data-lang-fr="Voir Mes Projets">View My Projects</a></li>
 			</ul>
 		</section>
 
 		<!-- Projects -->
 		<section id="projects">
-			<h2>Featured Projects</h2>
+			<h2 data-lang-en="Featured Projects" data-lang-fr="Projets Phares">Featured Projects</h2>
 			<div class="row">
-		<article class="col-6 col-12-xsmall work-item">
-			<a href="images/fulls/ft_transcendence/pong.png" class="image fit thumb"><img
-					src="images/thumbs/pong_thumb.jpg" alt="Pong Game" /></a>
-			<a href="images/fulls/ft_transcendence/pong_tournament.png" style="display:none"></a>
-			<a href="images/fulls/ft_transcendence/pong_chat.png" style="display:none"></a>
-			<h3><a href="https://github.com/kaierhyeh/ft_transcendence" target="_blank">Pong Game <i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
-				<p>A real-time multiplayer Pong game with user authentication, chat system, and matchmaking. Built
-					with NestJS backend and modern frontend stack.</p>
-				<p><strong>Tech:</strong> TypeScript, Node.js (Fastify), SQLite, Docker, Avalanche Blockchain</p>
-			</article>
-			<article class="col-6 col-12-xsmall work-item">
-				<a href="images/fulls/02.jpg" class="image fit thumb"><img
-						src="images/thumbs/webserv.jpg" alt="HTTP Server" /></a>
-				<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/Webserv" target="_blank">HTTP Server <i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
-					<p>A fully functional HTTP/1.1 server written in C++98 from scratch, supporting multiple
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="images/fulls/ft_transcendence/pong.png" class="image fit thumb"><img
+							src="images/thumbs/pong_thumb.jpg" alt="Pong Game" /></a>
+					<a href="images/fulls/ft_transcendence/pong_tournament.png" style="display:none"></a>
+					<a href="images/fulls/ft_transcendence/pong_chat.png" style="display:none"></a>
+					<h3><a href="https://github.com/kaierhyeh/ft_transcendence" target="_blank">Pong Game <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="A real-time multiplayer Pong game with user authentication, chat system, and matchmaking. Built with NestJS backend and modern frontend stack." data-lang-fr="Un jeu Pong multijoueur en temps réel avec authentification utilisateur, système de chat et matchmaking. Développé avec un backend NestJS et une stack frontend moderne.">A real-time multiplayer Pong game with user authentication, chat system, and matchmaking. Built
+						with NestJS backend and modern frontend stack.</p>
+					<p><strong>Tech:</strong> TypeScript, Node.js (Fastify), SQLite, Docker, Avalanche Blockchain</p>
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="images/fulls/webserv/index.jpg" class="image fit thumb"><img src="images/thumbs/webserv.jpg"
+							alt="HTTP Server" /></a>
+					<a href="images/fulls/webserv/form.jpg" style="display:none"></a>
+					<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/Webserv" target="_blank">HTTP Server
+							<i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="A fully functional HTTP/1.1 server written in C++98 from scratch, supporting multiple simultaneous connections, CGI scripts, and file uploads." data-lang-fr="Un serveur HTTP/1.1 entièrement fonctionnel écrit en C++98 depuis zéro, supportant plusieurs connexions simultanées, scripts CGI et téléchargements de fichiers.">A fully functional HTTP/1.1 server written in C++98 from scratch, supporting multiple
 						simultaneous connections, CGI scripts, and file uploads.</p>
 					<p><strong>Tech:</strong> C++98, HTTP Protocol, Socket Programming, CGI</p>
 				</article>
-			<article class="col-6 col-12-xsmall work-item">
-				<a href="images/fulls/03.jpg" class="image fit thumb"><img
-						src="images/thumbs/cub3d.jpg" alt="cub3D" /></a>
-				<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/cub3D" target="_blank">cub3D <i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
-					<p>A 3D maze game using raycasting technique inspired by Wolfenstein 3D. Implements texture mapping,
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/cub3d.jpg"
+							alt="cub3D" /></a>
+					<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/cub3D" target="_blank">cub3D <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="A 3D maze game using raycasting technique inspired by Wolfenstein 3D. Implements texture mapping, sprite rendering, and collision detection." data-lang-fr="Un jeu de labyrinthe 3D utilisant la technique du raycasting inspirée de Wolfenstein 3D. Implémente le texture mapping, le rendu de sprites et la détection de collisions.">A 3D maze game using raycasting technique inspired by Wolfenstein 3D. Implements texture mapping,
 						sprite rendering, and collision detection.</p>
 					<p><strong>Tech:</strong> C, Raycasting Algorithm, MinilibX, Graphics Programming</p>
 				</article>
-			<article class="col-6 col-12-xsmall work-item">
-				<a href="images/fulls/04.jpg" class="image fit thumb"><img
-						src="images/thumbs/minishell.jpg" alt="Minishell" /></a>
-				<h3><a href="https://github.com/kaierhyeh/Minishell" target="_blank">Minishell <i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
-					<p>A Unix shell implementation supporting pipes, redirections, environment variables, built-in
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/minishell.jpg"
+							alt="Minishell" /></a>
+					<h3><a href="https://github.com/kaierhyeh/Minishell" target="_blank">Minishell <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="A Unix shell implementation supporting pipes, redirections, environment variables, built-in commands, and signal handling." data-lang-fr="Une implémentation de shell Unix supportant les pipes, redirections, variables d'environnement, commandes intégrées et gestion des signaux.">A Unix shell implementation supporting pipes, redirections, environment variables, built-in
 						commands, and signal handling.</p>
 					<p><strong>Tech:</strong> C, Unix System Calls, Process Management, Bash</p>
 				</article>
-			<article class="col-6 col-12-xsmall work-item">
-				<a href="images/fulls/05.jpg" class="image fit thumb"><img
-						src="images/thumbs/inception.jpg" alt="Inception" /></a>
-				<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/Inception" target="_blank">Inception <i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
-					<p>Containerized infrastructure project featuring WordPress, MariaDB, and Nginx with custom
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/inception.jpg"
+							alt="Inception" /></a>
+					<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/Inception" target="_blank">Inception
+							<i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="Containerized infrastructure project featuring WordPress, MariaDB, and Nginx with custom Dockerfiles, secure networking, and volume management." data-lang-fr="Projet d'infrastructure conteneurisée avec WordPress, MariaDB et Nginx, incluant des Dockerfiles personnalisés, réseau sécurisé et gestion des volumes.">Containerized infrastructure project featuring WordPress, MariaDB, and Nginx with custom
 						Dockerfiles, secure networking, and volume management.</p>
 					<p><strong>Tech:</strong> Docker, Docker Compose, Nginx, MariaDB, WordPress</p>
 				</article>
-			<article class="col-6 col-12-xsmall work-item">
-				<a href="images/fulls/06.jpg" class="image fit thumb"><img
-						src="images/thumbs/philosophers.jpg" alt="Philosophers" /></a>
-				<h3><a href="https://github.com/kaierhyeh/Philosophers" target="_blank">Philosophers <i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
-					<p>Implementation of the dining philosophers problem using threads and mutexes, demonstrating
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/philosophers.jpg"
+							alt="Philosophers" /></a>
+					<h3><a href="https://github.com/kaierhyeh/Philosophers" target="_blank">Philosophers <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="Implementation of the dining philosophers problem using threads and mutexes, demonstrating concurrent programming and deadlock prevention." data-lang-fr="Implémentation du problème des philosophes dîneurs utilisant threads et mutex, démontrant la programmation concurrente et la prévention des interblocages.">Implementation of the dining philosophers problem using threads and mutexes, demonstrating
 						concurrent programming and deadlock prevention.</p>
 					<p><strong>Tech:</strong> C, Multithreading, Mutexes, Synchronization</p>
 				</article>
 			</div>
 			<ul class="actions">
-				<li><a href="https://github.com/kaierhyeh" class="button">View All on GitHub</a></li>
+				<li><a href="https://github.com/kaierhyeh" class="button" data-lang-en="View All on GitHub" data-lang-fr="Voir Tout sur GitHub">View All on GitHub</a></li>
 			</ul>
 		</section>
 
 		<!-- Three -->
 		<section id="three">
-			<h2>Get In Touch</h2>
-			<p>I'm currently open to software engineering opportunities, internships, or collaborative projects. Whether
+			<h2 data-lang-en="Get In Touch" data-lang-fr="Contactez-Moi">Get In Touch</h2>
+			<p data-lang-en="I'm currently open to software engineering opportunities, internships, or collaborative projects. Whether you want to discuss a potential role, ask about my work at École 42, or just connect over shared interests in systems programming, feel free to reach out." data-lang-fr="Je suis actuellement ouvert aux opportunités d'ingénierie logicielle, stages ou projets collaboratifs. Que vous souhaitiez discuter d'un rôle potentiel, poser des questions sur mon travail à École 42, ou simplement échanger sur des intérêts communs en programmation système, n'hésitez pas à me contacter.">I'm currently open to software engineering opportunities, internships, or collaborative projects. Whether
 				you want to discuss a potential role, ask about my work at École 42, or just connect over shared
 				interests in systems programming, feel free to reach out.</p>
 			<div class="row">
 				<div class="col-8 col-12-small">
 					<form method="post" action="https://formspree.io/f/YOUR_FORM_ID">
 						<div class="row gtr-uniform gtr-50">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name"
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" data-lang-en-placeholder="Name" data-lang-fr-placeholder="Nom" placeholder="Name"
 									required /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
+							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" data-lang-en-placeholder="Email" data-lang-fr-placeholder="Email"
 									placeholder="Email" required /></div>
-							<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"
+							<div class="col-12"><textarea name="message" id="message" data-lang-en-placeholder="Message" data-lang-fr-placeholder="Message" placeholder="Message" rows="4"
 									required></textarea></div>
 						</div>
 						<br />
 						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="submit" id="submit-btn" data-lang-en-value="Send Message" data-lang-fr-value="Envoyer le Message" value="Send Message" class="primary" /></li>
 						</ul>
 					</form>
 				</div>
@@ -154,11 +165,10 @@
 						</li>
 						<li>
 							<h3 class="icon brands fa-linkedin"><span class="label">LinkedIn</span></h3>
-							<a href="https://www.linkedin.com/in/kai-erh-yeh-56522620b/"
-								target="_blank">linkedin.com/in/yourprofile</a>
-						</li>
-					</ul>
-				</div>
+							<a href="https://www.linkedin.com/in/kaierhyeh/" target="_blank">linkedin.com/in/kaierhyeh</a>
+					</li>
+				</ul>
+			</div>
 			</div>
 		</section>
 
@@ -170,7 +180,7 @@
 			<ul class="icons">
 				<li><a href="https://github.com/kaierhyeh" class="icon brands fa-github" target="_blank"><span
 							class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/kai-erh-yeh-56522620b/" class="icon brands fa-linkedin"
+				<li><a href="https://www.linkedin.com/in/kaierhyeh/" class="icon brands fa-linkedin"
 						target="_blank"><span class="label">LinkedIn</span></a></li>
 				<li><a href="mailto:kaierhyeh@gmail.com" class="icon solid fa-envelope"><span
 							class="label">Email</span></a></li>
@@ -189,6 +199,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/language-switcher.js"></script>
 
 </body>
 

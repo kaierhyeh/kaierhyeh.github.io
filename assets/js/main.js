@@ -104,7 +104,7 @@
 				caption: function($a) { 
 					return $(this).find('h3').first().text(); 
 				}.bind(this),
-				overlayColor: '#2c2c2c',
+				overlayColor: '#28555e',
 				overlayOpacity: 0.85,
 				popupCloserText: '',
 				popupLoaderText: '',
