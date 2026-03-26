@@ -27,7 +27,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="#" class="image avatar"><img src="images/photo de 42.jpg" alt="Profile Picture" /></a>
+			<a href="#" class="image avatar"><img src="media/photo de 42.jpg" alt="Profile Picture" /></a>
 			<h1 data-lang-en="I'm <strong>Alex</strong>, a Software Engineer from <a href='https://en.wikipedia.org/wiki/42_(school)'>École 42</a>, passionate about building robust systems from the ground up." data-lang-fr="Je suis <strong>Alex</strong>, Ingénieur Logiciel à <a href='https://fr.wikipedia.org/wiki/42_(école)'>École 42</a>, passionné par la création de systèmes robustes de A à Z.">I'm <strong>Alex</strong>, a Software Engineer from <a href="https://en.wikipedia.org/wiki/42_(school)">École 42</a>, passionate about building robust systems from the ground up.</h1>
 		</div>
 	</header>
@@ -64,10 +64,27 @@
 			<h2 data-lang-en="Featured Projects" data-lang-fr="Projets Phares">Featured Projects</h2>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/ft_transcendence/pong.png" class="image fit thumb"><img
-							src="images/thumbs/pong_thumb.jpg" alt="Pong Game" /></a>
-					<a href="images/fulls/ft_transcendence/pong_tournament.png" style="display:none"></a>
-					<a href="images/fulls/ft_transcendence/pong_chat.png" style="display:none"></a>
+					<a href="#" class="image fit thumb" onclick="openGallery('travel_planner', 0); return false;">
+						<img src="media/thumbs/travel_planner.jpg" alt="Travel Planner" />
+					</a>
+					<h3><a href="https://github.com/kaierhyeh/Travel-Planner" target="_blank">Travel Planner <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="A smart travel assistant powered by Google Gemini AI. Built with React 19, it generates personalized 3-day itineraries and city visuals using advanced Prompt Engineering and asynchronous API integration." data-lang-fr="Un assistant de voyage intelligent propulsé par l'IA Google Gemini. Construit avec React 19, il génère des itinéraires personnalisés de 3 jours et des visuels de ville grâce à une ingénierie de prompt avancée et une intégration d'API asynchrone.">A smart travel assistant powered by Google Gemini AI. Built with React 19, it generates personalized 3-day itineraries and city visuals using advanced Prompt Engineering and asynchronous API integration.</p>
+					<p><strong>Tech:</strong> React 19, Gemini AI, Vite, TypeScript, Tailwind CSS</p>
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="#" class="image fit thumb" onclick="openGallery('npuzzle', 0); return false;">
+						<img src="media/thumbs/npuzzle.png" alt="N-Puzzle Solver Video" />
+					</a>
+					<h3><a href="https://github.com/kaierhyeh/N-Puzzle" target="_blank">N-Puzzle Solver <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="An A* search algorithm implementation in C++ to solve N-Puzzle configurations using various heuristics (Manhattan, Linear Conflict). Includes a fully static Web Visualizer." data-lang-fr="Une implémentation de l'algorithme de recherche A* en C++ pour résoudre des configurations N-Puzzle en utilisant diverses heuristiques. Comprend un Web Visualizer entièrement statique.">An A* search algorithm implementation in C++ to solve N-Puzzle configurations using various heuristics (Manhattan, Linear Conflict). Includes a fully static Web Visualizer.</p>
+					<p><strong>Tech:</strong> C++, A* Algorithm, Heuristic Search, HTML/JS</p>
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
+					<a href="#" class="image fit thumb" onclick="openGallery('pong', 0); return false;">
+						<img src="media/thumbs/pong_thumb.jpg" alt="Pong Game" />
+					</a>
 					<h3><a href="https://github.com/kaierhyeh/ft_transcendence" target="_blank">Pong Game <i
 								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
 					<p data-lang-en="A real-time multiplayer Pong game with user authentication, chat system, and matchmaking. Built with NestJS backend and modern frontend stack." data-lang-fr="Un jeu Pong multijoueur en temps réel avec authentification utilisateur, système de chat et matchmaking. Développé avec un backend NestJS et une stack frontend moderne.">A real-time multiplayer Pong game with user authentication, chat system, and matchmaking. Built
@@ -75,9 +92,9 @@
 					<p><strong>Tech:</strong> TypeScript, Node.js (Fastify), SQLite, Docker, Avalanche Blockchain</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/webserv/index.jpg" class="image fit thumb"><img src="images/thumbs/webserv.jpg"
-							alt="HTTP Server" /></a>
-					<a href="images/fulls/webserv/form.jpg" style="display:none"></a>
+					<a href="#" class="image fit thumb" onclick="openGallery('webserv', 0); return false;">
+						<img src="media/thumbs/webserv.jpg" alt="HTTP Server" />
+					</a>
 					<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/Webserv" target="_blank">HTTP Server
 							<i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
 					<p data-lang-en="A fully functional HTTP/1.1 server written in C++98 from scratch, supporting multiple simultaneous connections, CGI scripts, and file uploads." data-lang-fr="Un serveur HTTP/1.1 entièrement fonctionnel écrit en C++98 depuis zéro, supportant plusieurs connexions simultanées, scripts CGI et téléchargements de fichiers.">A fully functional HTTP/1.1 server written in C++98 from scratch, supporting multiple
@@ -85,9 +102,9 @@
 					<p><strong>Tech:</strong> C++98, HTTP Protocol, Socket Programming, CGI</p>
 			</article>
 			<article class="col-6 col-12-xsmall work-item">
-				<a href="images/fulls/cub3D/index.jpg" class="image fit thumb"><img src="images/thumbs/cub3D.jpg"
-						alt="cub3D" /></a>
-				<a href="images/fulls/cub3D/1.jpg" style="display:none"></a>
+				<a href="#" class="image fit thumb" onclick="openGallery('cub3d', 0); return false;">
+						<img src="media/thumbs/cub3D.jpg" alt="cub3D" />
+					</a>
 				<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/cub3D" target="_blank">cub3D <i
 							class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
 				<p data-lang-en="A 3D maze game using raycasting technique inspired by Wolfenstein 3D. Implements texture mapping, sprite rendering, and collision detection." data-lang-fr="Un jeu de labyrinthe 3D utilisant la technique du raycasting inspirée de Wolfenstein 3D. Implémente le texture mapping, le rendu de sprites et la détection de collisions.">A 3D maze game using raycasting technique inspired by Wolfenstein 3D. Implements texture mapping,
@@ -95,8 +112,9 @@
 				<p><strong>Tech:</strong> C, Raycasting Algorithm, MinilibX, Graphics Programming</p>
 			</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/minishell/index.jpg" class="image fit thumb"><img src="images/thumbs/minishell.jpg" alt="Minishell" /></a>
-					<a href="images/fulls/minishell/1.jpg" style="display:none"></a>
+					<a href="#" class="image fit thumb" onclick="openGallery('minishell', 0); return false;">
+						<img src="media/thumbs/minishell.jpg" alt="Minishell" />
+					</a>
 					<h3><a href="https://github.com/kaierhyeh/Minishell" target="_blank">Minishell <i
 								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
 					<p data-lang-en="A Unix shell implementation supporting pipes, redirections, environment variables, built-in commands, and signal handling." data-lang-fr="Une implémentation de shell Unix supportant les pipes, redirections, variables d'environnement, commandes intégrées et gestion des signaux.">A Unix shell implementation supporting pipes, redirections, environment variables, built-in
@@ -104,9 +122,9 @@
 					<p><strong>Tech:</strong> C, Unix System Calls, Process Management, Bash</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="images/fulls/inception/index.jpg" class="image fit thumb"><img src="images/thumbs/inception.jpg"
-							alt="Inception" /></a>
-					<a href="images/fulls/inception/1.png" style="display:none"></a>
+					<a href="#" class="image fit thumb" onclick="openGallery('inception', 0); return false;">
+						<img src="media/thumbs/inception.jpg" alt="Inception" />
+					</a>
 					<h3><a href="https://github.com/kaierhyeh/42-Cursus/tree/main/Inception" target="_blank">Inception
 							<i class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
 					<p data-lang-en="Containerized infrastructure project featuring WordPress, MariaDB, and Nginx with custom Dockerfiles, secure networking, and volume management." data-lang-fr="Projet d'infrastructure conteneurisée avec WordPress, MariaDB et Nginx, incluant des Dockerfiles personnalisés, réseau sécurisé et gestion des volumes.">Containerized infrastructure project featuring WordPress, MariaDB, and Nginx with custom
@@ -114,9 +132,9 @@
 					<p><strong>Tech:</strong> Docker, Docker Compose, Nginx, MariaDB, WordPress</p>
 				</article>
 				<article class="col-6 col-12-xsmall work-item">
-				<a href="images/fulls/philo/index.jpg" class="image fit thumb"><img src="images/thumbs/philo.jpg"
-						alt="Philosophers" /></a>
-				<a href="images/fulls/philo/1.jpg" style="display:none"></a>
+				<a href="#" class="image fit thumb" onclick="openGallery('philo', 0); return false;">
+						<img src="media/thumbs/philo.jpg" alt="Philosophers" />
+					</a>
 					<h3><a href="https://github.com/kaierhyeh/Philosophers" target="_blank">Philosophers <i
 								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
 					<p data-lang-en="Implementation of the dining philosophers problem using threads and mutexes, demonstrating concurrent programming and deadlock prevention." data-lang-fr="Implémentation du problème des philosophes dîneurs utilisant threads et mutex, démontrant la programmation concurrente et la prévention des interblocages.">Implementation of the dining philosophers problem using threads and mutexes, demonstrating
@@ -203,6 +221,126 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/language-switcher.js"></script>
+
+	<!-- ===== Global Custom Lightbox ===== -->
+	<div id="custom-modal" onclick="closeGallery()" style="display:none; position:fixed; z-index:10000; left:0; top:0; width:100%; height:100%; background:rgba(40,85,94,0.88); cursor:pointer; display:none; flex-direction:column; align-items:center; justify-content:center;">
+
+		<!-- Close button (non-interactive label, whole backdrop is clickable) -->
+		<span style="position:absolute; top:15px; right:22px; color:rgba(255,255,255,0.75); font-size:2rem; line-height:1; pointer-events:none;">&#10005;</span>
+
+		<!-- Flex row: [arrow][media][arrow] — stopPropagation only covers this row's bounding box -->
+		<div onclick="event.stopPropagation()" style="display:flex; align-items:center; gap:12px; cursor:default; max-width:95vw;">
+
+			<!-- Left arrow -->
+			<div id="custom-nav-prev" onclick="galleryNav(-1);" style="flex-shrink:0; cursor:pointer; background:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85); font-size:2.4rem; width:52px; height:110px; border-radius:8px; display:flex; align-items:center; justify-content:center; transition:background 0.18s, color 0.18s; user-select:none;" onmouseover="this.style.background='rgba(255,255,255,0.28)';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.12)';this.style.color='rgba(255,255,255,0.85)'">&#8249;</div>
+
+			<!-- Media content -->
+			<div id="custom-content" style="text-align:center; line-height:0;"></div>
+
+			<!-- Right arrow -->
+			<div id="custom-nav-next" onclick="galleryNav(1);" style="flex-shrink:0; cursor:pointer; background:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85); font-size:2.4rem; width:52px; height:110px; border-radius:8px; display:flex; align-items:center; justify-content:center; transition:background 0.18s, color 0.18s; user-select:none;" onmouseover="this.style.background='rgba(255,255,255,0.28)';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.12)';this.style.color='rgba(255,255,255,0.85)'">&#8250;</div>
+		</div>
+
+		<!-- Caption -->
+		<div id="custom-caption" style="margin-top:14px; color:rgba(255,255,255,0.75); font-size:0.88em; pointer-events:none;"></div>
+	</div>
+
+	<script>
+		var galleries = {
+			'travel_planner': [
+				{ type: 'video', src: 'media/fulls/travel_planner/Travel planner.mp4', caption: 'Travel Planner — Video Demo' },
+				{ type: 'image', src: 'media/fulls/travel_planner/title.jpg', caption: 'Travel Planner — Homepage' },
+				{ type: 'image', src: 'media/fulls/travel_planner/plan.jpg', caption: 'Travel Planner — Generated Itinerary' }
+			],
+			'npuzzle': [
+				{ type: 'video', src: 'media/fulls/npuzzle/npuzzle.mp4', caption: 'N-Puzzle Solver — Web Visualizer Demo' },
+				{ type: 'image', src: 'media/fulls/npuzzle/terminal.jpg', caption: 'N-Puzzle Solver — Terminal Statistics Output' }
+			],
+			'pong': [
+				{ type: 'image', src: 'media/fulls/ft_transcendence/pong.png', caption: 'Pong Game — Gameplay' },
+				{ type: 'image', src: 'media/fulls/ft_transcendence/pong_tournament.png', caption: 'Pong Game — Tournament Mode' },
+				{ type: 'image', src: 'media/fulls/ft_transcendence/pong_chat.png', caption: 'Pong Game — Global Chat' }
+			],
+			'webserv': [
+				{ type: 'image', src: 'media/fulls/webserv/index.jpg', caption: 'HTTP Server — Demo Page' },
+				{ type: 'image', src: 'media/fulls/webserv/form.jpg', caption: 'HTTP Server — File Upload' }
+			],
+			'cub3d': [
+				{ type: 'image', src: 'media/fulls/cub3D/index.jpg', caption: 'cub3D — Start Screen' },
+				{ type: 'image', src: 'media/fulls/cub3D/1.jpg', caption: 'cub3D — Gameplay' }
+			],
+			'minishell': [
+				{ type: 'image', src: 'media/fulls/minishell/index.jpg', caption: 'Minishell — Command Execution' },
+				{ type: 'image', src: 'media/fulls/minishell/1.jpg', caption: 'Minishell — Piped Commands' }
+			],
+			'inception': [
+				{ type: 'image', src: 'media/fulls/inception/index.jpg', caption: 'Inception — WordPress Architecture' },
+				{ type: 'image', src: 'media/fulls/inception/1.png', caption: 'Inception — MariaDB Database' }
+			],
+			'philo': [
+				{ type: 'image', src: 'media/fulls/philo/index.jpg', caption: 'Philosophers — Multithreading Output' },
+				{ type: 'image', src: 'media/fulls/philo/1.jpg', caption: 'Philosophers — Deadlock Avoidance' }
+			]
+		};
+		var currentGalleryId = null;
+		var currentIndex = 0;
+
+		function openGallery(id, idx) {
+			currentGalleryId = id;
+			currentIndex = idx;
+			document.getElementById('custom-modal').style.display = 'flex';
+			document.body.style.overflow = 'hidden';
+			galleryShow();
+		}
+
+		function closeGallery() {
+			var modal = document.getElementById('custom-modal');
+			var content = document.getElementById('custom-content');
+			modal.style.display = 'none';
+			content.innerHTML = '';
+			document.body.style.overflow = '';
+			currentGalleryId = null;
+		}
+
+		function galleryNav(dir) {
+			if (!currentGalleryId) return;
+			var items = galleries[currentGalleryId];
+			currentIndex = (currentIndex + dir + items.length) % items.length;
+			galleryShow();
+		}
+
+		function galleryShow() {
+			if (!currentGalleryId) return;
+			var items = galleries[currentGalleryId];
+			var item = items[currentIndex];
+			var content = document.getElementById('custom-content');
+			var caption = document.getElementById('custom-caption');
+			var prev = document.getElementById('custom-nav-prev');
+			var next = document.getElementById('custom-nav-next');
+
+			// Hide arrows for single-item galleries
+			var arrowDisplay = items.length > 1 ? 'flex' : 'none';
+			prev.style.display = arrowDisplay;
+			next.style.display = arrowDisplay;
+
+			var counter = items.length > 1 ? (currentIndex + 1) + ' / ' + items.length + ' — ' : '';
+
+			if (item.type === 'video') {
+				content.innerHTML = '<video src="' + item.src + '" controls autoplay playsinline style="max-width:85vw; max-height:78vh; box-shadow:0 0 40px rgba(0,0,0,0.8); border-radius: 4px;"></video>';
+			} else {
+				content.innerHTML = '<img src="' + item.src + '" style="max-width:85vw; max-height:78vh; box-shadow:0 0 40px rgba(0,0,0,0.8); border-radius: 4px;" />';
+			}
+			caption.textContent = counter + item.caption;
+		}
+
+		document.addEventListener('keydown', function(e) {
+			if (document.getElementById('custom-modal').style.display === 'none') return;
+			if (e.key === 'ArrowRight') galleryNav(1);
+			else if (e.key === 'ArrowLeft') galleryNav(-1);
+			else if (e.key === 'Escape') closeGallery();
+		});
+	</script>
+
 
 </body>
 

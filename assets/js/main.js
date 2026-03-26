@@ -95,26 +95,6 @@
 
 	// Main Sections: Projects.
 
-		// Lightbox gallery.
-			$window.on('load', function() {
-
-
-		$('.work-item').each(function() {
-			$(this).poptrox({
-				caption: function($a) { 
-					return $(this).find('h3').first().text(); 
-				}.bind(this),
-				overlayColor: '#28555e',
-				overlayOpacity: 0.85,
-				popupCloserText: '',
-				popupLoaderText: '',
-				selector: 'a[href*="images/"]',
-				usePopupCaption: true,
-				usePopupDefaultStyling: false,
-				usePopupEasyClose: false,
-				usePopupNav: true,
-				windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-			});
-		});		});
+		// Lightbox gallery replaced by custom modal.		});
 
 })(jQuery);

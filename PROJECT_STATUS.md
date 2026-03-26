@@ -238,7 +238,7 @@ git push origin main
 │   ├── css/
 │   │   ├── main.css                   ✅ 棕色主題樣式
 │   │   ├── fontawesome-all.min.css   ✅ 圖標
-│   │   └── images/overlay.png         ✅ 背景紋理
+│   │   └── media/overlay.png         ✅ 背景紋理
 │   ├── js/
 │   │   ├── main.js                    ✅ Poptrox 配置（遮罩顏色已調整）
 │   │   ├── language-switcher.js      ✅ 語言切換功能
@@ -249,7 +249,7 @@ git push origin main
 │   │   └── util.js                    ✅ 工具函數
 │   ├── sass/                          ⚠️  可考慮刪除（已編譯）
 │   └── webfonts/                      ✅ FontAwesome 字體
-├── images/
+├── media/
 │   ├── bg.jpg                         ✅ Header 背景
 │   ├── photo de 42.jpg                ✅ 個人頭像
 │   ├── fulls/                         ✅ Lightbox 大圖
