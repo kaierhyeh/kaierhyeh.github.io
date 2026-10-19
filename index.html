@@ -64,6 +64,15 @@
 			<h2 data-lang-en="Featured Projects" data-lang-fr="Projets Phares">Featured Projects</h2>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
+					<a href="#" class="image fit thumb" onclick="openGallery('gomoku', 0); return false;">
+						<img src="media/thumbs/gomoku.jpg" alt="Gomoku" />
+					</a>
+					<h3><a href="https://github.com/kaierhyeh/Gomoku" target="_blank">Gomoku <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="A Gomoku game on a 19×19 board built with Python and Pygame. Uses Minimax with Alpha-Beta pruning and pattern-based heuristics (&lt;0.5s/move), supporting PvP, PvE, and other bonus game modes." data-lang-fr="Un jeu de Gomoku sur un plateau 19×19 développé en Python et Pygame. Utilise Minimax avec élagage Alpha-Bêta et des heuristiques de motifs (&lt;0,5s/coup), supportant les modes JcJ, JcE et d'autres modes de jeu bonus.">A Gomoku game on a 19×19 board built with Python and Pygame. Uses Minimax with Alpha-Beta pruning and pattern-based heuristics (&lt;0.5s/move), supporting PvP, PvE, and other bonus game modes.</p>
+					<p><strong>Tech:</strong> Python, Pygame, Minimax, Alpha-Beta Pruning, Zobrist Hashing</p>
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
 					<a href="#" class="image fit thumb" onclick="openGallery('travel_planner', 0); return false;">
 						<img src="media/thumbs/travel_planner.jpg" alt="Travel Planner" />
 					</a>
@@ -247,6 +256,9 @@
 
 	<script>
 		var galleries = {
+			'gomoku': [
+				{ type: 'image', src: 'media/fulls/gomoku/demo1.jpg', caption: 'Gomoku — Live Gameplay, AI Timer (<0.5s) & Rule Diagnostics' }
+			],
 			'travel_planner': [
 				{ type: 'video', src: 'media/fulls/travel_planner/Travel planner.mp4', caption: 'Travel Planner — Video Demo' },
 				{ type: 'image', src: 'media/fulls/travel_planner/title.jpg', caption: 'Travel Planner — Homepage' },
