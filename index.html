@@ -64,6 +64,15 @@
 			<h2 data-lang-en="Featured Projects" data-lang-fr="Projets Phares">Featured Projects</h2>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
+					<a href="#" class="image fit thumb" onclick="openGallery('dslr', 0); return false;">
+						<img src="media/thumbs/dslr.png" alt="DSLR" />
+					</a>
+					<h3><a href="https://github.com/kaierhyeh/dslr" target="_blank">Data Science Logistic Regression <i
+								class="fa fa-external-link-alt" style="font-size: 0.7em; opacity: 0.6;"></i></a></h3>
+					<p data-lang-en="A Data Science and One-vs-All Logistic Regression pipeline built from scratch in Python to recreate the Hogwarts Sorting Hat (&gt;98% accuracy). Features manual descriptive statistics, EDA visualizations, L2 regularization, Early Stopping, and 5 gradient descent optimizers." data-lang-fr="Un pipeline de Data Science et de Régression Logistique One-vs-All codé de zéro en Python pour recréer le Choixpeau de Poudlard (&gt;98 % de précision). Inclut des statistiques descriptives manuelles, des visualisations EDA, la régularisation L2, l'Early Stopping et 5 optimiseurs de descente de gradient.">A Data Science and One-vs-All Logistic Regression pipeline built from scratch in Python to recreate the Hogwarts Sorting Hat (&gt;98% accuracy). Features manual descriptive statistics, EDA visualizations, L2 regularization, Early Stopping, and 5 gradient descent optimizers.</p>
+					<p><strong>Tech:</strong> Python, Logistic Regression, Gradient Descent (BGD/SGD/Adam), EDA, NumPy, Matplotlib/Seaborn</p>
+				</article>
+				<article class="col-6 col-12-xsmall work-item">
 					<a href="#" class="image fit thumb" onclick="openGallery('gomoku', 0); return false;">
 						<img src="media/thumbs/gomoku.jpg" alt="Gomoku" />
 					</a>
@@ -256,6 +265,12 @@
 
 	<script>
 		var galleries = {
+			'dslr': [
+				{ type: 'image', src: 'media/fulls/dslr/bonus info.png', caption: 'DSLR — Comprehensive Benchmark: Optimizers, L2 Regularization & Early Stopping' },
+				{ type: 'image', src: 'media/fulls/dslr/optimizers compare.png', caption: 'DSLR — Learning Curves: 5 Gradient Descent Optimizers Convergence Dynamics' },
+				{ type: 'image', src: 'media/fulls/dslr/histogram.png', caption: 'DSLR — Hogwarts Courses Score Distributions by House (Histogram)' },
+				{ type: 'image', src: 'media/fulls/dslr/pair plot.png', caption: 'DSLR — Feature Selection Scatter Plot Matrix (Pair Plot)' }
+			],
 			'gomoku': [
 				{ type: 'image', src: 'media/fulls/gomoku/demo1.jpg', caption: 'Gomoku — Live Gameplay, AI Timer (<0.5s) & Rule Diagnostics' }
 			],

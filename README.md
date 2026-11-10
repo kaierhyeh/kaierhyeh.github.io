@@ -2,7 +2,7 @@
 
 **專案名稱：** Kai-Erh (Alex) YEH - 個人作品集網站  
 **網址：** https://kaierhyeh.github.io  
-**最後更新：** 2026-10-19
+**最後更新：** 2026-11-10
 
 ## 🖥️ 本地測試
 
@@ -23,7 +23,7 @@ python3 -m http.server 8000
 - ✅ HTML5 UP Strata 模板配置
 - ✅ 個人資訊填寫（姓名、郵箱、GitHub、LinkedIn）
 - ✅ École 42 與跨領域背景介紹（環境工程、天體物理、AI 與資安）
-- ✅ 專案列表（共 9 個精選專案）
+- ✅ 專案列表（共 10 個精選專案）
 
 ### 2. 設計風格
 - ✅ **棕色主題**配色方案
@@ -47,7 +47,7 @@ python3 -m http.server 8000
 - ✅ **完整翻譯**：
   - Header 介紹
   - 關於我的內容（3 段）
-  - 所有 9 個專案描述
+  - 所有 10 個專案描述
   - 聯絡表單與按鈕文字
 
 ### 4. 專案圖片與影片畫廊（Custom Lightbox）
@@ -56,9 +56,10 @@ python3 -m http.server 8000
   - 支援鍵盤左右方向鍵 (`ArrowLeft` / `ArrowRight`) 與 `Escape` 關閉
   - 單張媒體自動隱藏左右切換箭頭，多張媒體顯示頁數計數器
   - 遮罩顏色：`rgba(40, 85, 94, 0.88)`（深青綠色）
-- ✅ **所有 9 個專案媒體皆已完備**：
+- ✅ **所有 10 個專案媒體皆已完備**：
   | 專案 | 狀態 | 媒體內容 | 備註 |
   |------|------|---------|------|
+  | **DSLR** | ✅ 完成 | 4 張圖片 | `bonus info.png`, `optimizers compare.png`, `histogram.png`, `pair plot.png` |
   | **Gomoku** | ✅ 完成 | 1 張圖片 | `demo1.jpg`（實機對局與 AI 計時診斷） |
   | **Travel Planner** | ✅ 完成 | 1 部影片 + 2 張圖片 | `Travel planner.mp4`, `title.jpg`, `plan.jpg` |
   | **N-Puzzle Solver** | ✅ 完成 | 1 部影片 + 1 張圖片 | `npuzzle.mp4`, `terminal.jpg` |
@@ -107,7 +108,7 @@ python3 -m http.server 8000
 ## 🚀 部署檢查清單
 
 ### 部署前確認
-- [x] 所有專案縮圖與畫廊媒體已上傳（9/9 完成）
+- [x] 所有專案縮圖與畫廊媒體已上傳（10/10 完成）
 - [ ] Formspree Form ID 已設定
 - [x] 測試所有 GitHub 專案連結
 - [x] 測試英法雙語切換
@@ -119,7 +120,7 @@ python3 -m http.server 8000
 
 ```
 /home/kyeh/portfolio/
-├── index.html                          ✅ 主頁面（含 9 個專案與自訂 Lightbox）
+├── index.html                          ✅ 主頁面（含 10 個專案與自訂 Lightbox）
 ├── assets/
 │   ├── css/
 │   │   ├── main.css                    ✅ 棕色主題樣式
@@ -139,6 +140,7 @@ python3 -m http.server 8000
 │   ├── bg.jpg                          ✅ Header 背景
 │   ├── photo de 42.jpg                 ✅ 個人頭像
 │   ├── fulls/                          ✅ Lightbox 完整媒體（圖片 + 影片）
+│   │   ├── dslr/                       ✅ 4 張圖片
 │   │   ├── gomoku/                     ✅ 1 張圖片 (demo1.jpg)
 │   │   ├── travel_planner/             ✅ 1 部影片 + 2 張圖片
 │   │   ├── npuzzle/                    ✅ 1 部影片 + 1 張圖片
@@ -148,7 +150,8 @@ python3 -m http.server 8000
 │   │   ├── minishell/                  ✅ 2 張圖片
 │   │   ├── inception/                  ✅ 2 張圖片
 │   │   └── philo/                      ✅ 2 張圖片
-│   └── thumbs/                         ✅ 9 個專案縮圖
+│   └── thumbs/                         ✅ 10 個專案縮圖
+│       ├── dslr.png
 │       ├── gomoku.jpg
 │       ├── travel_planner.jpg
 │       ├── npuzzle.png
@@ -193,6 +196,12 @@ python3 -m http.server 8000
 
 ## 📝 開發筆記
 
+### 2026-11-10 更新
+1. ✅ **新增 DSLR 專案展示**
+   - 加入 `DSLR` 專案卡片（連結至 `https://github.com/kaierhyeh/dslr`）
+   - 撰寫英/法雙語專案介紹（從零打造的描述性統計、EDA 視覺化、One-vs-All 邏輯回歸、L2 正則化、Early Stopping 與 5 種梯度下降優化器，`>98%` 準確率）
+   - 配置 `media/thumbs/dslr.png` 與 `media/fulls/dslr/`（4 張圖表）Lightbox 畫廊
+
 ### 2026-10-19 更新
 1. ✅ **新增 Gomoku 專案展示**
    - 加入 `Gomoku` 專案卡片（連結至 `https://github.com/kaierhyeh/Gomoku`）
@@ -215,7 +224,7 @@ python3 -m http.server 8000
 - **設計優化：** 100% ✅
 - **語言功能：** 100% ✅
 - **代碼清理：** 100% ✅
-- **專案圖片/影片：** 100% ✅ (9/9 完成)
+- **專案圖片/影片：** 100% ✅ (10/10 完成)
 - **表單設定：** 0% ⏳ (待註冊 Formspree)
 - **部署準備：** 95% ✅
 
